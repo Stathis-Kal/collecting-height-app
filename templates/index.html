@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Collecting Height App</title>
+    <meta name="description"
+        content="A Web application that collects users height, store it in DB then it send an email to the user with statistical analysis of average data in the records of db.">
+    <meta name="author" content="Stathis Kaloutsidis">
+
+    <link href="../static/main.css" rel="stylesheet">
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- background animation divs -->
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="title">
+        <h1>Collecting Height</h1>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a class="doubleDashed" href="{{url_for ('about')}}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h3>Please fill the entries to get population statistics on height.</h3>
+        <div class="message">
+            {{text | safe}}
+        </div>
+        <form action="{{url_for ('success')}}" method="POST">
+            <input title="Your email will be safe with us" type="email" placeholder="Enter your email address"
+                name="email_name" required>
+            <br>
+            <input title="Your data will be safe with us" type="number" min="50" max="300"
+                placeholder="Enter your height in cm" name="height_name" required>
+            <br>
+            <button class="mybtn" type="submit"> Submit </button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About</title>
+    <meta name="description" content="The about page of the web app.">
+    <meta name="author" content="Stathis Kaloutsidis">
+
+    <link href="../static/main.css" rel="stylesheet">
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a class="doubleDashed" href="{{url_for ('home')}}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-ctn">
+        <div class="content-ctn">
+            <div class="clearfix">
+                <img src="../static/images/mojicon.png" alt="emoji avatar image" width="80" height="80">
+                Hello, I'm Stathis Kaloutsidis and I developed this app for education purposes and as Proof of Concept (POC).
+                <br> This web application
+                collects users height via a HTML form and send the data to a secure PostgreSQL database. Then it send an
+                email back to the user with statistical data about the average height of all records that are stored in
+                the db. <br>
+                Tech Stack: Python, Flask & PostgreSQL. <br>
+                The Mojicon are made by Sunbzy and doodles by Open Doodles.
+                <br> You can visit my <a href="https://github.com/Stathis-Kal" target="_blank" rel="noreferrer"
+                    class="gradientText">GitHub</a> and <a href="https://www.linkedin.com/in/efstathios-kaloutsidis/"
+                    target="_blank" rel="noreferrer" class="gradientText">LinkedIn</a> for more!
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

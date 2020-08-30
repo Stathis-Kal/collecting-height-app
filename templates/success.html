@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank you for your submission!</title>
+    <meta name="description" content="success page to inform the user that everything went fine.">
+    <meta name="author" content="Stathis Kaloutsidis">
+    
+    <link href="../static/main.css" rel="stylesheet">
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a class="doubleDashed" href="{{url_for ('home')}}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure>
+        <figcaption>Thank you for your submission! <br>
+            You will receive an email with the survey results shorty.</h3>
+            <br> <em>You may also need to check your spam folder.</em>
+        </figcaption>
+        <img src="../static/images/LovingDoodle.png" alt="loving doodle image" width="1024" height="768">
+    </figure>
+
+</body>
+
+</html>

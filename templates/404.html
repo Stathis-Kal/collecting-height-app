@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>404 Page not found!</title>
+    <meta name="description" content="404 page">
+    <meta name="author" content="Stathis Kaloutsidis">
+
+    <link href="../static/main.css" rel="stylesheet">
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <figure>
+        <figcaption>
+            <h1>Error - 404: Page not found</h1> <br>
+            Oops! The page you are trying to reach does not exist, or has been moved. </h3>
+            <br> <em>Please click <a href="{{ url_for('home') }}" rel="noreferrer"
+                    class="gradientText">here</a> to return to the homepage!</em>
+        </figcaption>
+        <img src="../static/images/MessyDoodle.png" alt="messy doodle image" width="1024" height="700">
+    </figure>
+
+</body>
+
+</html>
