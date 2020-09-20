@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def send_email(email, height, avg_height, count):
-    sender = os.environ.get("user")
-    sender_pwd = os.environ.get("password")
+    sender = os.environ.get("EMAIL_SENDER")
+    sender_pwd = os.environ.get("EMAIL_PASSWORD")
     receiver = email
     subject = "Height Data 📊"
     message = "Hello there 👋, your height is <strong>%s</strong> cm 😄. The average height of all records is <strong>%f</strong> 😲 and that is calculated out of <strong>%g</strong> people! 👏" % (
