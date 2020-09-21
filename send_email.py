@@ -1,9 +1,6 @@
 from email.mime.text import MIMEText
 import smtplib
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 def send_email(email, height, avg_height, count):
     sender = os.environ.get("EMAIL_SENDER")
